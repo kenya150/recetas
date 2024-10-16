@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    height: 450px;
+    flex-wrap: wrap;
+    margin: 10px;   /* Espaciado entre las tarjetas */
+}
+.card img {
+    width: 100%;       /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 200px;     /* Establece una altura fija */
+    object-fit: cover; /* Recorta la imagen para mantener la proporción */
+    cursor: pointer;
+}

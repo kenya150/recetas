@@ -1,0 +1,13 @@
+<h2 class="text-center mt-3">{{ title}}</h2>
+<hr>
+<div clas="container-fluis"> 
+    <div class="row">
+    @for (pasteles of pastel; track $index){
+
+        <div class="col col-sm-4 col-md-3 col-log-2">
+        <app-card [pasteles]="pasteles"></app-card>
+        </div>
+}
+
+    </div>
+</div>

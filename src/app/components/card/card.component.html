@@ -1,0 +1,14 @@
+<div class="card mt-3 mb-3 mx-2 shadow rounded container">
+    <img class="card-img-top rounded-top card img" [src]="pasteles.img" [alt]="pasteles.title" />
+    <div class="card-body">
+        <h4 class="card-title">{{pasteles.title}}</h4>
+        <p class="card-text">{{pasteles.frase}}</p>
+        <button
+            (click)="recibeid(pasteles.id)"
+            type="button"
+            class="btn btn-success ms-1"
+        >ver receta
+            <i class="fa-solid fa-star"></i>
+        </button>
+    </div>
+</div>

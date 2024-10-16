@@ -1,0 +1,25 @@
+.CENTER{
+    text-align: center;
+}
+
+.letra{
+    /*background-color:rgb(245, 108, 35);*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: auto;
+    /* width: 800px;
+    height: auto;*/
+}
+
+.img-product{
+    width: 400px;
+}
+
+.letra2{
+    font-style: italic;
+    font-weight: 700;
+}
+.letra3{
+    font-style: italic;
+    font-weight: 200;
+}

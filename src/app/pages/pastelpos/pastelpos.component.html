@@ -1,0 +1,11 @@
+<h2>{{ title }}</h2>
+<div *ngIf="pasos">
+    <img class="card-img-top rounded-top w-50" [src]="pasos.img" [alt]="title" />
+    <h3>Ingredientes:</h3>
+    <p>{{ pasos.ingredientes }}</p>
+    <h3>Pasos:</h3>
+    <p>{{ pasos.pasos }}</p>
+</div>
+<div *ngIf="!pasos">
+<p>No se encontraron ingredientes.</p>
+</div>
