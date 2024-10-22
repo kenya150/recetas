@@ -6,7 +6,12 @@ import { EnsaladaComponent } from './pages/ensalada/ensalada.component';
 import { PastaComponent } from './pages/pasta/pasta.component';
 import { NinoComponent } from './pages/nino/nino.component';
 import { DesayunoComponent } from './pages/desayuno/desayuno.component';
+import { AuthComponent } from './pages/auth/auth.component';
 export const routes: Routes = [
+    {
+      path: 'auth', // Ruta de autenticación
+      component: AuthComponent
+    },
     {
         path:"home",
         component:HomeComponent
@@ -33,11 +38,11 @@ export const routes: Routes = [
     },
     {
         path:'pastelpos/:pastelid',
-        component:PastelposComponent 
+        component:PastelposComponent
     },
     {
         path: '**',
-        redirectTo: 'home',
+        redirectTo: 'auth',
         pathMatch:'full'
     }
 ]
