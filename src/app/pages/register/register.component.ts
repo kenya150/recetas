@@ -12,14 +12,16 @@ import { FormsModule } from '@angular/forms';
   imports: [CommonModule, FormsModule]
 })
 export class RegisterComponent {
-  username: string = '';
+  email: string = '';
   password: string = '';
+  name!: string;
 
   constructor(private http: HttpClient, private router: Router) {}
 
   register() {
     const user = {
-      username: this.username,
+      name: this.name,
+      email: this.email,
       password: this.password
     };
 
