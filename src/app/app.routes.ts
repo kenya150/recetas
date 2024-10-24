@@ -7,10 +7,16 @@ import { PastaComponent } from './pages/pasta/pasta.component';
 import { NinoComponent } from './pages/nino/nino.component';
 import { DesayunoComponent } from './pages/desayuno/desayuno.component';
 import { AuthComponent } from './pages/auth/auth.component';
+import { RegisterComponent } from './pages/register/register.component';
+
 export const routes: Routes = [
     {
-      path: 'auth', // Ruta de autenticación
-      component: AuthComponent
+        path: 'auth', // Ruta de autenticación
+        component: AuthComponent
+    },
+    {
+        path: 'register', // Ruta de registro
+        component: RegisterComponent
     },
     {
         path:"home",
